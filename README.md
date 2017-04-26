@@ -21,6 +21,7 @@ save_session('test_session')
 ### Loading
 
 ```
+from lazyDS import load_session
 loaded_vars = load_session('test_session')
 for var_name in loaded_vars:
     exec(var_name + " = loaded_vars[var_name]")
