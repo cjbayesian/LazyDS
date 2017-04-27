@@ -7,7 +7,7 @@ Tired of thinking about what variables you've created during a long day of data 
 
 ### Saving
 
-```
+```python
 from lazyDS import save_session
 
 a = range(10)
@@ -20,7 +20,7 @@ save_session('test_session')
 
 ### Loading
 
-```
+```python
 from lazyDS import load_session
 loaded_vars = load_session('test_session')
 for var_name in loaded_vars:
