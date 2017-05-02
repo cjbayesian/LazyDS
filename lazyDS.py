@@ -52,6 +52,7 @@ def save_session(path='tmp_session'):
         try:
             save_obj(v, k, path)
         except:
+            os.remove(os.path.join(path,k))
             print "ERROR - Could not save", k
 
 
